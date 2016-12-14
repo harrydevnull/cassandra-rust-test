@@ -1,0 +1,7 @@
+[package]
+name = "cassandraaccess"
+version = "0.1.0"
+authors = ["Hareendran Chandrasekharan nair <hachandr@akamai.com>"]
+
+[dependencies]
+cdrs="0.2.0"
