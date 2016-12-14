@@ -14,16 +14,16 @@ fn main() {
 
     // without compression
     let response_frame = client.start(compression::Compression::Snappy).unwrap();
-    let select_query = String::from("SELECT * FROM cycling.person;");
+    // let select_query = String::from("SELECT * FROM cycling.person;");
 
-    match client.query(select_query) {
-        Ok(res) => {
-            println!("Result frame: {:?},\nparsed body: {:?}",
-                     res,
-                     res.get_body())
-        }
-        Err(err) => println!("Error: {:?}", err),
-    }
+    // match client.query(select_query) {
+    //     Ok(res) => {
+    //         println!("Result frame: {:?},\nparsed body: {:?}",
+    //                  res,
+    //                  res.get_body())
+    //     }
+    //     Err(err) => println!("Error: {:?}", err),
+    // }
 
 
 }
